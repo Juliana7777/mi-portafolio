@@ -1,0 +1,123 @@
+.fondo {
+  background: 
+    linear-gradient(rgba(0,0,0,1.6), rgba(0,0,0,0.6)), /* Capa oscura haciendola ligeramente opaca*/ 
+    url('/portafolio/mi-portafolio/assets/img/fondo.jpg'); /* Ruta de la imagen del fondo del portafolio */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  min-height: 100vh;
+
+}
+
+/* Fuentes (Tipogrfías  para el texto */
+.fuente-1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+}
+
+/* Estilos para la cabecera (header) */
+.hero {
+    background-color: #020d39;  /* Establece el fondo para toda la etiqueta header */
+    color: #fff;                /* Color del texto dentro del header */
+    padding:  25px 90px;         /* Espacio interno del header, entre el título y el fondo*/
+    text-align: center;         /* Centra horizontalmente todo el contenido dentro del header */
+}
+
+/* Línea  debajo del título */
+
+header::after {
+    content: "";                
+    display: block;             /* Se comporta como un bloque para poder darle ancho y alto */
+    width: 60px;                /* Ancho de la línea bajo el título */
+    height: 3px;                /* Altura de la bajo el título */
+    background-color: #431c02;  /* Línea bajo el título */
+    margin: 20px auto 0;        /* Margen superior  */
+    
+}
+  
+/* Estilos para la sección de introducción (intro) */
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;  /* Espacio de 40px entre los elementos */
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.intro-text {
+  max-width: 400px;  /* El ancho que va a ocupar el texto */
+}
+
+.foto-perfil {
+  width: 250px; /* Ancho de la imagen */
+  height: 500px; /* altura de la imagen */
+  object-fit: cover;
+  border-radius: 120px 120px 0 0;
+  box-shadow: 0 4px 24px rgba(255,255,255,0.08); /* Sombreado de la imagen */
+  border: 5px solid #fff; /* Agrega delineado a la imagen */
+  
+}
+
+/* Estilos para los títulos y valores dentro de los datos personales */
+
+
+.datos-personales {
+ 
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  display: flex;
+  gap: 18px;
+}
+
+.dato {
+  color: #fff;
+  padding: 12px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+ 
+
+.dato-titulo {
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.dato-valor {
+  text-align: right;
+}
+
+
+/* Clases de alineación de texto */
+
+.izquierda {
+  text-align: left;
+  
+}
+
+.centro {
+  text-align: center;
+}
+
+.derecha {
+  text-align: right;
+}
+
+/* Botonos de proyectos */
+
+.btn-1 {
+  background-color: #17045a; /* Verde */
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
